@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textViewNomeStruttura"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:text="@string/nome_struttura_riempito_dinamicamente"
+                    android:textColor="@android:color/black"
+                    android:textIsSelectable="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="76dp" />
+
+                <ImageView
+                    android:id="@+id/imageStella1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="6dp"
+                    android:contentDescription="@string/una_stella"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewNomeStruttura"
+                    app:srcCompat="@drawable/ic_star_border_black_24dp" />
+
+                <ImageView
+                    android:id="@+id/imageStella2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@+id/imageStella1"
+                    app:layout_constraintTop_toTopOf="@+id/imageStella1"
+                    app:srcCompat="@drawable/ic_star_border_black_24dp"
+                    android:contentDescription="@string/due_stelle" />
+
+                <ImageView
+                    android:id="@+id/imageStella3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@+id/imageStella2"
+                    app:layout_constraintTop_toTopOf="@+id/imageStella2"
+                    app:srcCompat="@drawable/ic_star_border_black_24dp"
+                    android:contentDescription="@string/tre_stelle" />
+
+                <ImageView
+                    android:id="@+id/imageStella4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@+id/imageStella3"
+                    app:layout_constraintTop_toTopOf="@+id/imageStella3"
+                    app:srcCompat="@drawable/ic_star_border_black_24dp"
+                    android:contentDescription="@string/quattro_stelle" />
+
+                <ImageView
+                    android:id="@+id/imageStella5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@+id/imageStella4"
+                    app:layout_constraintTop_toTopOf="@+id/imageStella4"
+                    app:srcCompat="@drawable/ic_star_border_black_24dp"
+                    android:contentDescription="@string/cinque_stelle" />
+
+                <TextView
+                    android:id="@+id/textViewValutazione"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/nessuna_valutazione_disponibile"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageStella5"
+                    app:layout_constraintStart_toEndOf="@+id/imageStella5"
+                    app:layout_constraintTop_toTopOf="@+id/imageStella5" />
+
+                <TextView
+                    android:id="@+id/textViewDescrizione"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="24dp"
+                    android:text="@string/descrizione_struttura_riempita_dinamicamente"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewTitoloDescrizioneStruttura" />
+
+                <View
+                    android:id="@+id/view13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@color/colorBackground"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/buttonVisualizzaSuMappa" />
+
+                <View
+                    android:id="@+id/view12"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#c0c0c0"
+                    app:layout_constraintBottom_toTopOf="@+id/listViewRecensioni" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="12dp"
+                    android:background="#c0c0c0"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewSitoWeb"
+                    tools:layout_editor_absoluteX="-16dp" />
+
+                <View
+                    android:id="@+id/view17"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#c0c0c0"
+                    app:layout_constraintBottom_toTopOf="@+id/view13"
+                    tools:layout_editor_absoluteX="0dp" />
+
+                <View
+                    android:id="@+id/view19"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimaryDark"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="-16dp" />
+
+                <TextView
+                    android:id="@+id/textViewInformazioni"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/informazioni_struttura"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view13" />
+
+                <TextView
+                    android:id="@+id/textViewTitoloDescrizioneStruttura"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/descrizione_struttura"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageStella1" />
+
+                <TextView
+                    android:id="@+id/textViewRecensioni"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:text="@string/numero_recensioni_struttura"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/buttonFiltraRecensioni"
+                    app:layout_constraintEnd_toEndOf="@+id/buttonScriviRecensione"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/buttonFiltraRecensioni" />
+
+                <ImageView
+                    android:id="@+id/imageViewIndirizzo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="@+id/textViewInformazioni"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewInformazioni"
+                    app:srcCompat="@drawable/ic_place_black_24dp"
+                    android:contentDescription="@string/indirizzo" />
+
+                <TextView
+                    android:id="@+id/textViewIndirizzo"
+                    android:textIsSelectable="true"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:text="@string/indirizzo_riempito_dinamicamente"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageViewIndirizzo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewIndirizzo"
+                    app:layout_constraintTop_toTopOf="@+id/imageViewIndirizzo" />
+
+                <ImageView
+                    android:id="@+id/imageViewTelefono"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="@+id/imageViewIndirizzo"
+                    app:layout_constraintTop_toBottomOf="@+id/imageViewIndirizzo"
+                    app:srcCompat="@drawable/ic_phone_black_24dp"
+                    android:contentDescription="@string/numero_di_telefono" />
+
+                <TextView
+                    android:id="@+id/textViewTelefono"
+                    android:textIsSelectable="true"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:text="@string/numero_di_telefono_riempito_dinamicamente"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageViewTelefono"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewTelefono"
+                    app:layout_constraintTop_toTopOf="@+id/imageViewTelefono" />
+
+                <ImageView
+                    android:id="@+id/imageViewEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="@+id/imageViewTelefono"
+                    app:layout_constraintTop_toBottomOf="@+id/imageViewTelefono"
+                    app:srcCompat="@drawable/ic_email_black_24dp"
+                    android:contentDescription="@string/email" />
+
+                <TextView
+                    android:id="@+id/textViewEmail"
+                    android:textIsSelectable="true"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:text="@string/email_riempita_dinamicamente"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageViewEmail"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewEmail"
+                    app:layout_constraintTop_toTopOf="@+id/imageViewEmail" />
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageViewEmail"
+                    app:srcCompat="@drawable/ic_web_black_24dp"
+                    android:contentDescription="@string/sito_web" />
+
+                <TextView
+                    android:id="@+id/textViewSitoWeb"
+                    android:textIsSelectable="true"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:text="@string/sito_web"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView12"
+                    app:layout_constraintTop_toTopOf="@+id/imageView12" />
+
+                <Button
+                    android:id="@+id/buttonFiltraRecensioni"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="24dp"
+                    android:text="@string/filtri"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewSitoWeb" />
+
+                <Button
+                    android:id="@+id/buttonScriviRecensione"
+                    style="@android:style/Widget.Material.Button.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/bottone_scrivi_nuova_recensione"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/buttonFiltraRecensioni" />
+
+                <TextView
+                    android:id="@+id/textViewAvvisoRecensione"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:text="@string/avviso_scrittura_recensione_riempito_dinamicamente"
+                    app:layout_constraintBottom_toBottomOf="@+id/buttonScriviRecensione"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/buttonScriviRecensione"
+                    app:layout_constraintTop_toTopOf="@+id/buttonScriviRecensione" />
+
+                <ListView
+                    android:id="@+id/listViewRecensioni"
+                    android:layout_width="0dp"
+                    android:layout_height="400dp"
+                    android:layout_marginTop="6dp"
+                    android:nestedScrollingEnabled="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/buttonScriviRecensione"
+                    tools:ignore="NestedScrolling" />
+
+                <Button
+                    android:id="@+id/buttonVisualizzaSuMappa"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="24dp"
+                    android:text="@string/button_visualizza_su_mappa"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewDescrizione" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

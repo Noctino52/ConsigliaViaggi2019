@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_logout"
+        android:title=""
+        app:showAsAction="never"/>
+    <item
+        android:title="@string/home"
+        android:id="@+id/menu_home"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_home_white_24dp"
+        android:onClick="homePremuto"/>
+    <item
+        android:id="@+id/menu_ricerca"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:title="@string/button_cerca"
+        app:queryHint="@string/hint_ricerca"
+        app:defaultQueryHint="@string/hint_ricerca"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always"/>
+</menu>

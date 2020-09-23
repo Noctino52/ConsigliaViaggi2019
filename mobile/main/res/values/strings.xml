@@ -1,0 +1,185 @@
+<resources>
+    <!-- Generale -->
+    <string name="app_name">ConsigliaViaggi2019</string>
+    <string name="bottone_annulla">Annulla</string>
+    <string name="bottone_conferma">Conferma</string>
+    <string name="bottone_ok">OK</string>
+    <string name="popup_titolo_attenzione">Attenzione!</string>
+    <string name="popup_titolo_errore">Errore!</string>
+    <string name="popup_titolo_successo">Successo!</string>
+    <string name="tornando_indietro_i_valori_inseriti_saranno_persi_continuare">
+        Tornando indietro i valori inseriti saranno persi. Continuare?</string>
+    <string name="stringa_vuota"> </string>
+    <string name="logo_app">Logo del applicazione</string>
+
+
+    <!-- Accedi -->
+    <string name="effettua_il_login">Login:</string>
+    <string name="nome_utente">Nome user</string>
+    <string name="hint_campo_password">Password</string>
+    <string name="accedi">Accedi</string>
+    <string name="non_sei_registrato">Non sei registrato?</string>
+    <string name="registrati">Crea un account</string>
+    <string name="Non_vuoi_registrarti">Non vuoi registrarti?</string>
+    <string name="accedi_visitatore">Accedi come visitatore</string>
+
+
+    <!-- Registrazione -->
+    <string name="dati_personali">Dati personali</string>
+    <string name="Vuoi_essere_visualizzato_con_il_tuo_nome_reale">
+        Vuoi essere visualizzato con il tuo nome reale?</string>
+    <string name="email">Email</string>
+    <string name="dati_per_il_login">Dati per il login</string>
+    <string name="mostra_nome_reale">Mostra nome reale</string>
+    <string name="cognome">Cognome</string>
+    <string name="nome">Nome</string>
+    <string name="conferma_password">Conferma password</string>
+    <string name="esempio_email_registrazione">sample@sample.com</string>
+    <string name="Registrati_dai">
+        Registrati a ConsigliaViaggi2019!</string>
+    <string name="il_campo_non_puo_essere_vuoto">Il campo non può essere vuoto</string>
+    <string name="la_password_deve_contenere_8_caratteri">
+        La password deve essere lunga almeno 8 caratteri</string>
+    <string name="l_username_deve_essere_lungo_4_caratteri">
+        Il nome user deve essere\nlungo almeno 4 caratteri</string>
+    <string name="email_non_valida">
+        Email non valida</string>
+    <string name="il_nome_utente_non_puo_contenere_spazi">
+        Il nome user non può contenere spazi bianchi</string>
+    <string name="nome_utente_gia_in_uso">Nome user già in uso</string>
+    <string name="email_gia_in_uso">Email già in uso</string>
+    <string name="password_non_corrispondenti">Le password NON corrispondono</string>
+    <string name="registrazione_avvenuta_con_successo">
+        Registrazione avvenuta con successo!</string>
+    <string name="errore_durante_registrazione">
+        Errore durante la registrazione</string>
+
+
+    <!-- Barra del menu -->
+    <string name="hint_ricerca">Cerca per nome</string>
+    <string name="logout">Effettua logout</string>
+    <string name="ricerca">Effettua ricerca</string>
+
+    <!-- Home -->
+    <string name="apri_mappa">Apri mappa</string>
+    <string name="visualizza_strutture_vicine">Visualizza le strutture nelle vicinanze</string>
+    <string name="cerca_per_categoria">Cerca strutture per categoria</string>
+    <string name="attrazioni_turisriche">Attrazioni Turistiche</string>
+    <string name="ristoranti">Ristoranti</string>
+    <string name="hotel">Hotel</string>
+    <string name="home">Home</string>
+    <string name="popup_torna_alla_home_perdita_dati">
+        "Tornando alla home perderai i dati inseriti. Continuare?"</string>
+    <string name="popup_effettua_ricerca_perdita_dati">
+        "Effettuando la ricerca perderai i dati inseriti. Continuare?"</string>
+
+    <!-- Mappa -->
+    <string name="_10_km">10KM</string>
+    <string name="_5_km">5KM</string>
+    <string name="_3_km">3KM</string>
+    <string name="_1_km">1KM</string>
+    <string name="tutto">∞</string>
+    <string name="bottone_posizione_premuto_toast">La tua posizione</string>
+    <string name="funzioni_gps_attive_toast">Funzionalità gps attivate</string>
+    <string name="gps_disabilitato_richiesta_abilitazione">Il GPS sembra essere disabilitato,
+        alcune funzionalità della mappa saranno limitate. Vuoi attivarlo?</string>
+
+
+    <!-- Ricerca structure -->
+    <string name="risultati_ricerca">Risultati ricerca:</string>
+    <string name="nessuna_struttura_trovata">Nessuna structure trovata</string>
+
+
+    <!-- Filtri ricerca -->
+    <string name="filtri">Filtri</string>
+    <string name="numero_stelle_minimo_per_le_strutture">
+        Numero stelle minimo per le strutture</string>
+    <string-array name="filtri_ricerca_numero_stelle">
+        <item>Nessuno</item>
+        <item>Una stella</item>
+        <item>Due stelle</item>
+        <item>Tre stelle</item>
+        <item>Quattro stelle</item>
+        <item>Cinque stelle</item>
+    </string-array>
+    <string name="distanza_massima_per_le_strutture">Distanza massima per le strutture</string>
+    <string-array name="filtri_ricerca_distanza_massima">
+        <item>Nessuna distanza massima</item>
+        <item>1 KM</item>
+        <item>3 KM</item>
+        <item>5 KM</item>
+        <item>10 KM</item>
+    </string-array>
+    <string name="ordinamenti">Ordinamenti</string>
+    <string name="ordina_per_numero_di_stelle_crescenti">
+        Ordina per numero di stelle crescenti</string>
+    <string name="ordina_per_numero_di_stelle_decrescenti">
+        Ordina per numero di stelle decrescenti</string>
+    <string name="ordina_per_distanza">Ordina per distanza</string>
+
+
+    <!-- Filtri recensioni -->
+    <string name="cinque_stelle">Cinque stelle</string>
+    <string name="quattro_stelle">Quattro stelle</string>
+    <string name="tre_stelle">Tre stelle</string>
+    <string name="due_stelle">Due stelle</string>
+    <string name="una_stella">Una stella</string>
+    <string name="ordina_per_numero_di_stelle_decrescente">
+        Ordina per numero di stelle decrescente</string>
+    <string name="ordina_per_numero_di_stelle_crescente">
+        Ordina per numero di stelle crescente</string>
+    <string name="ordina_per_meno_recente">Ordina per meno recente</string>
+    <string name="ordina_per_pi_recente">Ordina per più recente</string>
+
+
+    <!-- Scrittura review-->
+    <string name="valutazione">Valutazione</string>
+    <string name="nome_struttura_riempito_dinamicamente">NomeStruttura</string>
+    <string name="una_recensione_deve_contenere_almeno_100_caratteri">
+        Una review deve contenere almeno 100 caratteri</string>
+    <string name="scrivi_una_recensione">Scrivi una review</string>
+    <string name="review">Recensione</string>
+    <string name="premi_una_stella_per_scegliere_la_tua_valutazione">
+        Premi una stella per scegliere la tua valutazione</string>
+    <string name="bottone_pubblica">Pubblica</string>
+    <string name="mancano_d_caratteri">Mancano %d caratteri</string>
+    <string name="si_e_verificato_un_errore_durante_la_pubblicazione">
+        Si è verificato un errore nella pubblicazione della review, riprovare più tardi
+    </string>
+    <string name="pubblicazione_effettuata_con_successo">
+        Pubblicazione effettuata con successo</string>
+    <string name="nome_utente_o_password_errati">
+        Nome Utente o password errati. Controlla i valori inseriti e riprova</string>
+
+
+    <!-- Cella review -->
+    <string name="nome_utente_recensione_riempito_dinamicamente">\@nomeUtente</string>
+    <string name="descrizione_recensione_riempita_dinamicamente">Descrizione review</string>
+    <string name="data_scrittura_riempita_dinamicamente">14–10–2019</string>
+
+
+    <!-- Structure -->
+    <string name="avviso_scrittura_devi_effettuare_il_login">Devi effettuare il login!</string>
+    <string name="avviso_scrittura_hai_gia_scritto_una_recensione">
+        Hai già scritto una review!</string>
+    <string name="avviso_scrittura_recensione_riempito_dinamicamente">
+        Avviso scrittura review</string>
+    <string name="numero_di_telefono_riempito_dinamicamente">Numero di telefono</string>
+    <string name="indirizzo_riempito_dinamicamente">Indirizzo</string>
+    <string name="immagine_struttura">Immagine structure</string>
+    <string name="descrizione_struttura_riempita_dinamicamente">Descrizione structure</string>
+    <string name="nessuna_valutazione_disponibile">N/A</string>
+    <string name="informazioni_struttura">Informazioni</string>
+    <string name="descrizione_struttura">Descrizione</string>
+    <string name="numero_recensioni_struttura">Recensioni (%d)</string>
+    <string name="campo_non_disponibile_struttura">Campo non disponibile</string>
+    <string name="bottone_scrivi_nuova_recensione">Scrivi Recensione</string>
+    <string name="email_riempita_dinamicamente">Email</string>
+    <string name="sito_web">Sito web</string>
+    <string name="numero_di_telefono">Numero di telefono</string>
+    <string name="indirizzo">Indirizzo</string>
+    <string name="button_cerca">Cerca</string>
+    <string name="button_visualizza_su_mappa">Visualizza sulla mappa</string>
+    <string name="oppure">oppure</string>
+
+</resources>

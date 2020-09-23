@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="0dip">
+
+    <View
+        android:id="@+id/view15"
+        android:layout_width="wrap_content"
+        android:layout_height="4dp"
+        android:background="@color/colorBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNomeUtenteRecensione"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="3dp"
+        android:gravity="center_vertical"
+        android:text="@string/nome_utente_recensione_riempito_dinamicamente"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textViewDataScritturaRecensione"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view15" />
+
+    <TextView
+        android:id="@+id/textViewDescrizioneRecensione"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical"
+        android:text="@string/descrizione_recensione_riempita_dinamicamente"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewStella1Recensione" />
+
+    <ImageView
+        android:id="@+id/imageViewStella1Recensione"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="3dp"
+        android:contentDescription="@string/una_stella"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNomeUtenteRecensione"
+        app:srcCompat="@drawable/ic_star_border_black_24dp" />
+
+    <ImageView
+        android:id="@+id/imageViewStella2Recensione"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/imageViewStella1Recensione"
+        app:layout_constraintTop_toTopOf="@+id/imageViewStella1Recensione"
+        app:srcCompat="@drawable/ic_star_border_black_24dp"
+        android:contentDescription="@string/due_stelle" />
+
+    <ImageView
+        android:id="@+id/imageViewStella3Recensione"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/imageViewStella2Recensione"
+        app:layout_constraintTop_toTopOf="@+id/imageViewStella2Recensione"
+        app:srcCompat="@drawable/ic_star_border_black_24dp"
+        android:contentDescription="@string/tre_stelle" />
+
+    <ImageView
+        android:id="@+id/imageViewStella4Recensione"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/imageViewStella3Recensione"
+        app:layout_constraintTop_toTopOf="@+id/imageViewStella3Recensione"
+        app:srcCompat="@drawable/ic_star_border_black_24dp"
+        android:contentDescription="@string/quattro_stelle" />
+
+    <ImageView
+        android:id="@+id/imageViewStella5Recensione"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/imageViewStella4Recensione"
+        app:layout_constraintTop_toTopOf="@+id/imageViewStella4Recensione"
+        app:srcCompat="@drawable/ic_star_border_black_24dp"
+        android:contentDescription="@string/cinque_stelle" />
+
+    <TextView
+        android:id="@+id/textViewDataScritturaRecensione"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="@string/data_scrittura_riempita_dinamicamente"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewNomeUtenteRecensione"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewNomeUtenteRecensione" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

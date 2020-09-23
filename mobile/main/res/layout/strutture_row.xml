@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dip">
+
+        <View
+            android:id="@+id/view13"
+            android:layout_width="wrap_content"
+            android:layout_height="4dp"
+            android:background="@color/colorBackground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewNomeStrutturaRicerca"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="3dp"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/textViewTipoStruttura"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view13" />
+
+        <TextView
+            android:id="@+id/textViewDistanzaStrutturaRicerca"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewIndirizzoStrutturaRicerca" />
+
+        <ImageView
+            android:id="@+id/imageViewStella1Struttura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="3dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNomeStrutturaRicerca"
+            app:srcCompat="@drawable/ic_star_border_black_24dp"
+            android:contentDescription="@string/una_stella" />
+
+        <ImageView
+            android:id="@+id/imageViewStella2Struttura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/imageViewStella1Struttura"
+            app:layout_constraintTop_toTopOf="@+id/imageViewStella1Struttura"
+            app:srcCompat="@drawable/ic_star_border_black_24dp"
+            android:contentDescription="@string/due_stelle" />
+
+        <ImageView
+            android:id="@+id/imageViewStella3Struttura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/imageViewStella2Struttura"
+            app:layout_constraintTop_toTopOf="@+id/imageViewStella2Struttura"
+            app:srcCompat="@drawable/ic_star_border_black_24dp"
+            android:contentDescription="@string/tre_stelle" />
+
+        <ImageView
+            android:id="@+id/imageViewStella4Struttura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/imageViewStella3Struttura"
+            app:layout_constraintTop_toTopOf="@+id/imageViewStella3Struttura"
+            app:srcCompat="@drawable/ic_star_border_black_24dp"
+            android:contentDescription="@string/quattro_stelle" />
+
+        <ImageView
+            android:id="@+id/imageViewStella5Struttura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/imageViewStella4Struttura"
+            app:layout_constraintTop_toTopOf="@+id/imageViewStella4Struttura"
+            app:srcCompat="@drawable/ic_star_border_black_24dp"
+            android:contentDescription="@string/cinque_stelle" />
+
+        <TextView
+            android:id="@+id/textViewTipoStruttura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewIndirizzoStrutturaRicerca"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="24dp"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewStella1Struttura" />
+
+        <TextView
+            android:id="@+id/textViewMediaRecensioniRicerca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:text=""
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewStella5Struttura"
+            app:layout_constraintStart_toEndOf="@+id/imageViewStella5Struttura"
+            app:layout_constraintTop_toTopOf="@+id/imageViewStella5Struttura" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

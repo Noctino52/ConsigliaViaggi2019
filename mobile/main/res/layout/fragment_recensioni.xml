@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textViewValutazioneRecensione"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/valutazione"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNomeStrutturaScriviRecensione" />
+
+        <Button
+            android:id="@+id/buttonUnaStella"
+            style="@android:style/Widget.Material.Button.Borderless"
+            android:layout_width="25pt"
+            android:layout_height="25pt"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ic_star_border_black_24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <Button
+            android:id="@+id/buttonDueStelle"
+            style="@android:style/Widget.Material.Button.Borderless"
+            android:layout_width="25pt"
+            android:layout_height="25pt"
+            android:background="@drawable/ic_star_border_black_24dp"
+            app:layout_constraintStart_toEndOf="@+id/buttonUnaStella"
+            app:layout_constraintTop_toTopOf="@+id/buttonUnaStella" />
+
+        <Button
+            android:id="@+id/buttonTreStelle"
+            style="@android:style/Widget.Material.Button.Borderless"
+            android:layout_width="25pt"
+            android:layout_height="25pt"
+            android:background="@drawable/ic_star_border_black_24dp"
+            app:layout_constraintStart_toEndOf="@+id/buttonDueStelle"
+            app:layout_constraintTop_toTopOf="@+id/buttonDueStelle" />
+
+        <Button
+            android:id="@+id/buttonQuattroStelle"
+            style="@android:style/Widget.Material.Button.Borderless"
+            android:layout_width="25pt"
+            android:layout_height="25pt"
+            android:background="@drawable/ic_star_border_black_24dp"
+            app:layout_constraintStart_toEndOf="@+id/buttonTreStelle"
+            app:layout_constraintTop_toTopOf="@+id/buttonTreStelle" />
+
+        <Button
+            android:id="@+id/buttonCinqueStelle"
+            style="@android:style/Widget.Material.Button.Borderless"
+            android:layout_width="25pt"
+            android:layout_height="25pt"
+            android:background="@drawable/ic_star_border_black_24dp"
+            app:layout_constraintStart_toEndOf="@+id/buttonQuattroStelle"
+            app:layout_constraintTop_toTopOf="@+id/buttonQuattroStelle" />
+
+        <TextView
+            android:id="@+id/textViewScriviRecensione"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/review"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonUnaStella" />
+
+        <TextView
+            android:id="@+id/textViewNomeStrutturaScriviRecensione"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/nome_struttura_riempito_dinamicamente"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/una_recensione_deve_contenere_almeno_100_caratteri"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewScriviRecensione" />
+
+        <EditText
+            android:id="@+id/editTextTestoRecensione"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:autofillHints="@string/scrivi_una_recensione"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/scrivi_una_recensione"
+            android:inputType="textMultiLine"
+            android:maxLength="1000"
+            android:singleLine="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNumeroCaratteriRecensione" />
+
+        <TextView
+            android:id="@+id/textViewNumeroCaratteriRecensione"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/mancano_d_caratteri"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <Button
+            android:id="@+id/buttonPubblicaRecensione"
+            style="@android:style/Widget.Material.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/bottone_pubblica"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTestoRecensione"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTestoRecensione" />
+
+        <Button
+            android:id="@+id/buttonAnnullaRecensione"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="@string/bottone_annulla"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/buttonPubblicaRecensione" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/premi_una_stella_per_scegliere_la_tua_valutazione"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewValutazioneRecensione" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
