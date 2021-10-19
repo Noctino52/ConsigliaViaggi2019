@@ -14,5 +14,3 @@ L'applicativo fa utilizzo del framework di autenticazione, autorizzazione e sicu
 # Note
 
 Il server spring è attualmente hostato su Elastic Beanstalk, questo vuol dire che per testare l'app mobile si può scaricare anche solo quest'ultima. Anche il DB MySql è attualmente hostato in RDS, questo vuol dire che nel server spring in src/main/resorces il file databaseInformation.properties contiene le informazioni per accedere al suddetto DB, in caso qualcuno voglia collegarlo al proprio sà come fare.
-
-NON E' CONSENTITO IL RIUSO ANCHE PARZIALE DI CODICE E DOCUMENTAZIONE PRESENTE IN QUESTA PAGINA.
