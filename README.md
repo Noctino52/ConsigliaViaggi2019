@@ -1,16 +1,28 @@
-# ConsigliaViaggi2019
+# ConsigliaViaggi2019 ![logo-search-grid-1x-removebg-preview(1)](https://github.com/Noctino52/ConsigliaViaggi2019/assets/20641545/30764908-c939-4afe-bad7-76a20fa1bb93)
 
-Progetto sviluppato per l'esame “Ingegneria del software” del Corso di Laurea in Informatica presso l'Università degli studi di Napoli Federico II.
-# Breve descrizione
 
-Si tratta di una piattaforma di supporto relativa a viaggi: L’applicazione mobile consente agli utenti di poter effettuare ricerche di strutture ricettive e di visualizzare le singole nei dettagli, includendo eventuali recensioni e/o strutture ricettive ad essa correlate. La ricerca può essere effettuata in diversi modi: mediante parole chiave, per tipo della struttura ricettiva (Hotel, Ristorante, Attrazione turistica) oppure geolocalizzata (ricerca su mappa tramite API Google e individuazione tramite GPS). Inoltre i risultati di ricerca potranno essere filtrati e/o ordinati così come le recensioni di ogni struttura.
-# Panoramica delle tecnologie
+ConsigliaViaggi2019 is a mobile application developed for the "Software Engineering" exam as part of the Computer Science program at the University of Naples Federico II.
+It serves as a travel support platform, allowing users to search for accommodation facilities and view details about them, including reviews and related services.
+The search can be performed by keywords, type of accommodation (Hotel, Restaurant, Tourist Attraction), or through geolocation using Google Maps API and GPS.
 
-Come DBMS è stato utilizzato MySQL, questo viene interrogato da un server scritto in Spring Boot ed espone vari metodi all'esterno. Sia Client che Server sono scritti in Kotlin. Per risolvere vari problemi di dipendenze sono stati utilizzati Maven e Grandle, quindi un pom.xml per il server, e un build.grandle per il mobile.
 
-Per garantire una scalabilità del software sono stati utilizzati i seguenti servizi: AWS Elastic Beanstalk: Utilizzato per hostare il server Spring (https://aws.amazon.com/it/elasticbeanstalk/) AWS RDS: Utilizzato per hostare il database scritto in MySql (https://aws.amazon.com/it/rds/)
 
-L'applicativo fa utilizzo del framework di autenticazione, autorizzazione e sicurezza Spring Security con token jwt. Per criptare le password nel database è stato utilizzato l'algoritmo BCrypt.
-# Note
+## What is it?
+It is a mobile application designed to assist users in finding and exploring accommodation options and related services.
 
-Il server spring è attualmente hostato su Elastic Beanstalk, questo vuol dire che per testare l'app mobile si può scaricare anche solo quest'ultima. Anche il DB MySql è attualmente hostato in RDS, questo vuol dire che nel server spring in src/main/resorces il file databaseInformation.properties contiene le informazioni per accedere al suddetto DB, in caso qualcuno voglia collegarlo al proprio sà come fare.
+![Cattura(1)](https://github.com/Noctino52/ConsigliaViaggi2019/assets/20641545/35236bcd-9cc8-4d14-8896-d0940756aa1c)
+
+## Technologies used:
+- **DBMS**: MySQL
+- **Server**: Spring Boot (written in Kotlin)
+- **Client**: Kotlin
+- **Dependency Management**: Maven and Gradle
+- **Cloud Services**: AWS Elastic Beanstalk (for hosting the Spring server), AWS RDS (for hosting the MySQL database)
+- **Security**: Spring Security with JWT tokens, BCrypt algorithm for password encryption.
+
+## Ambition of the project:
+The project was developed for an academic exam. It showcases proficiency in various technologies and frameworks, demonstrating the ability to build a functional and secure mobile application.
+The Spring server is currently hosted on Elastic Beanstalk, and the MySQL DB is hosted on RDS.
+
+The project is in a completed state, but further development or adjustments may be made as needed.
+The mobile app can be tested independently, and instructions are provided for connecting the server to a personal database if desired.
