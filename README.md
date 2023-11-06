@@ -1,7 +1,6 @@
 # ConsigliaViaggi2019 ![logo-search-grid-1x-removebg-preview(1)](https://github.com/Noctino52/ConsigliaViaggi2019/assets/20641545/30764908-c939-4afe-bad7-76a20fa1bb93)
 
 
-ConsigliaViaggi2019 is a mobile application developed for the "Software Engineering" exam as part of the Computer Science program at the University of Naples Federico II.
 It serves as a travel support platform, allowing users to search for accommodation facilities and view details about them, including reviews and related services.
 The search can be performed by keywords, type of accommodation (Hotel, Restaurant, Tourist Attraction), or through geolocation using Google Maps API and GPS.
 
